@@ -1,0 +1,18 @@
+type Cart {
+  products: [CartItem]
+}
+
+type Buy {
+  quantity: String
+}
+
+type CartItem {
+  name: String,
+  price: Int,
+  description: String
+  Cart: Buy
+}
+
+type Query {
+  getCart: Cart @isAuth
+}

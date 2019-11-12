@@ -1,0 +1,25 @@
+type Product {
+  id: Int
+  name: String
+  description: String
+  price: Int
+  quantity: Int
+}
+
+input ProductInput {
+  name: String
+  description: String
+  price: Int
+  quantity: Int
+}
+
+type Query {
+   getProduct(id: Int): Product
+   getProducts: [Product]
+}
+
+type Mutation {
+  createProduct(data: ProductInput): Product
+  updateProduct(id: Int, data: ProductInput): Product
+  addToCart(id: Int!, quantity: Int): Product @isAuth
+}
