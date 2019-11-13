@@ -21,5 +21,6 @@ type Query {
 type Mutation {
   createProduct(data: ProductInput): Product
   updateProduct(id: Int, data: ProductInput): Product
+  deleteProduct(id: Int): Product
   addToCart(id: Int!, quantity: Int): Product @isAuth
 }

@@ -71,5 +71,18 @@ export const Mutation = {
     after: async (product) => {
       return product;
     }
+  }),
+  deleteProduct: rs(Product, {
+    before: async (findOptions, {id}) => {
+      let err; let product;
+      [err, product] = await to(Product.destroy({where:{id}}));
+      if(err) {
+        throw err;
+      }
+      findOptions.where = {id}
+    },
+    after: async (product) => {
+      return product;
+    }
   })
 };
