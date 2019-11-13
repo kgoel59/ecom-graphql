@@ -12,7 +12,6 @@ export const Query = {
           return findOptions;
         },
         after: async (cart) => {
-          console.log(JSON.stringify(cart,null,4));
           return cart;
         }
     })
