@@ -4,11 +4,11 @@ dotenv.config();
 
 export const DB = {
     DEV: {
-        HOST: "localhost",
-        PORT: 3306,
-        NAME: "ecom",
-        USER: "root",
-        PASS: "mkae12000",
+        HOST:  `YOUR_DB_HOST`,
+        PORT:  `YOUR_DB_PORT`,
+        NAME:  `YOUR_DB_NAME`,
+        USER:  `YOUR_DB_USER`,
+        PASS:  `YOUR_DB_PASWORD`,
     },
     PRO: {
         HOST: process.env.DB_HOST,
