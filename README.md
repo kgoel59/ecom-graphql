@@ -47,4 +47,6 @@ yarn build
 yarn start
 ```
 
-You can now start the graphql playground at server/graphql
+You can now start the graphql playground at server/graphql<br/>
+
+For more info check the docs

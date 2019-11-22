@@ -5,7 +5,7 @@ dotenv.config();
 export const DB = {
     DEV: {
         HOST:  `YOUR_DB_HOST`,
-        PORT:  `YOUR_DB_PORT`,
+        PORT:   1234,
         NAME:  `YOUR_DB_NAME`,
         USER:  `YOUR_DB_USER`,
         PASS:  `YOUR_DB_PASWORD`,
